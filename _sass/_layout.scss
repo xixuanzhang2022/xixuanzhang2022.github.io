@@ -39,7 +39,7 @@ footer {
   }
   .copyright {
     margin-top: 2em;
-    color: #d1d1d1;
+    color: $gray-3;
     line-height: 1.75;
     font-size: 14px;
     @include bp-small {
@@ -49,7 +49,7 @@ footer {
       text-align: center;
     }
     a {
-      color: #d1d1d1;
+      color: $gray-3;
     }
   }
 }
