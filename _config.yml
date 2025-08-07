@@ -2,11 +2,11 @@
 permalink:           pretty
 
 # Setup
-title:               Jami Gibbs
-tagline:             Software Developer from Chicago.
-url:                 https://jamigibbs.com
+title:               Xixuan Zhang
+tagline:             Data | AI | Social Science
+url:                 "https://xixuanzhang2022.github.io"
 paginate:            1
-baseurl:             ""
+baseurl:             "/portfolio"
 
 # Assets
 #
@@ -17,20 +17,25 @@ sass:
 
 # About/contact
 author:
-  name:              Jami Gibbs
-  url:               https://hachyderm.io/@jamigibbs
-  email:             jami0821@gmail.com
+  name:              Xixuan Zhang
+  url:               xixuanzhang2022.github.io/portfolio
+  email:             xixuan.zh@gmail.com
 
 # Custom vars
 version:             2.0.1
 github:
-  repo:              https://github.com/jamigibbs/portfolio
-google_analytics:    UA-3363703-15
-twitter:             jamigibbs
-github:              jamigibbs
-dribbble:            jamigibbs
+  repo:              https://github.com/xixuanzhang2022/portfolio
+google_analytics:    
+twitter:             
+github:              xixuanzhang2022
+dribbble:            
 
 # Gems
 plugins:
   # - jekyll-paginate
   # - jekyll-gist
+
+collections:
+  publications:
+    output: true   # means each item will have its own page
+    permalink: /publications/:path/

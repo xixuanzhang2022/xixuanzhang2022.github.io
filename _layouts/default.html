@@ -9,7 +9,7 @@
     <div class="large-12 large-centered columns">
 
       <header class="masthead">
-        <img src="{{ site.baseurl }}/public/profile.jpg" alt="Jami Gibbs">
+        <img src="{{ site.baseurl }}/public/xixuan.png" alt="Xixuan Zhang">
       </header>
 
     </div>
@@ -21,55 +21,103 @@
 
       <div class="content-section">
 
-        <p>
-          Hello! I’m Jami Gibbs and I'm a software engineer from Chicago. I founded
-          <a href="https://rescuethemes.com">Rescue Themes</a> which specializes in nonprofit and niche website templates. Currently I'm working in civic tech modernizing citizen services, advocating for accessibility, and leading open source government projects.</p>
-        <p>
-          When I'm not contributing to a <a href="https://github.com/jamigibbs">cool project</a> or sharpening my engineering skills, I'm <a href="https://jgibbs.co/">woodworking</a> and <a href="https://www.strava.com/athletes/1711062">kicking up road dust</a>.
+        <p style="font-size: 18px">
+          Hello! I'm <a href="/public/XixuanZHANG-CV-industry-2p.pdf" target="_blank">Xixuan</a>, a data scientist and PhD candidate in Computational Social Science at the Free University of Berlin. With a dual background in <strong>computer engineering</strong> and <strong>social science</strong>, I research how people create, share, and debate information on digital platforms, applying <strong>advanced computational methods</strong> to analyze <strong>large-scale data</strong>.
+        </p>
+        <p style="font-size: 18px">
+          When I'm not immersed in a <a href="https://github.com/xixuanzhang2022"> project</a>, you’ll probably find me  reading, running, playing the piano, or cuddling with my <a href="/public/manulida.png">cats</a> 🐈🐈.
         </p>
 
       </div>
-
+      <hr>
       <main>
-        <h2>Latest Work</h2>
+        <h2>Selected Research Projects</h2>
         {% for post in site.posts %}
-          <div class="project-post">
+          <div class="project-post", style="font-size: 15px">
             <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
+            {% if post.coauthors%}
+            <div class="coauthors">
+              <span>with {{ post.coauthors }}</span >
+            </div>
+            {% endif %}
+            {% if post.tags != empty %}
+            <div class="tags">
+              {% for tag in post.tags %}
+              <span style ="
+                      font-size: 0.9em;
+                      color: #9eb1bd;
+                      background-color: #ECEFF1;
+                      padding: 0.1em 0.1em;
+                      display: inline-block;
+                      margin-bottom: 0.5em;">{{ tag }}</span >
+              {% endfor %}
+            </div>
 
+            {% endif %}
             {{ post.content }}
 
             <ul>
-              <li>
-                <a href="{{ post.git }}" aria-label="Github"><i class="fab fa-github"></i></a>
-              </li>
+
               {% if post.site %}
                 <li>
                   <a href="{{ post.site }}" aria-label="Blog"><i class="fa fa-link"></i></a>
                 </li>
               {% endif %}
-            </ul>
 
-            <hr />
+              {% if post.file %}
+                <li>
+                  <a href="{{ post.file }}" aria-label="file" target="_blank"><i class="fas fa-file-alt"></i></a>
+                </li>
+              {% endif %}
+
+              {% if post.git %}
+                <li>
+                  <a href="{{ post.git }}" aria-label="Github"><i class="fab fa-github"></i></a>
+                </li>
+              {% endif %}
+
+
+            </ul>
+            {% unless forloop.last %}
+            <hr style="border: none; border-top: 0.2px dashed #ccc;">
+            {% endunless %}
           </div>
         {% endfor %}
+        <hr>
+        <h2>Peer-Reviewed Journal Publications</h2>
+        <ul class="project-publication" style="font-size: 0.8rem; padding-left: 1.5em;">
+          {% for pub in site.publications reversed %}
+          <div>
+            <li style="list-style-type: disc; color: #555; /* text color */">
+              <strong>{{ pub.title }}</strong><br>
+              {{ pub.authors }} — <em>{{ pub.journal }}</em>, {{ pub.year }}<br>
+              {% if pub.link %}<a href="{{ pub.link }}" target="_blank" style = "color: #9eb1bd;">View Online</a>{% endif %}
+              {% if pub.pdf %} | <a href="{{ pub.pdf }}" target="_blank" style = "color: #9eb1bd;">PDF</a>{% endif %}
+            </li>
+          {% endfor %}
+        </div>
+        </ul>
       </main>
+      <hr />
 
       <footer>
         <h2>Get In Touch!</h2>
 
         <p>
           Send me an
-          <a href="mailto:jami0821@gmail.com?Subject=Hello,%20Jami!">email</a> or ping me on
-          <a href="https://www.linkedin.com/in/jami-gibbs-731985112
-">Linkedin</a>. I’m also on
-          <a href="https://github.com/jamigibbs">Github</a> and <a href="https://dribbble.com/JamiGibbs">Dribbble</a>.
+          <a href="mailto:xixuan.zh@gmail.com?Subject=Hello,%20Xixuan!">email</a> or ping me on
+          <a href="https://www.linkedin.com/in/xixuan-zhang">Linkedin</a>.
         </p>
 
         <p class="copyright">
-          <!-- &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. -->
-          This site is a Jekyll template I developed and it's licensed MIT. You're welcome to
-          <a href="https://github.com/jamigibbs/portfolio">use it too</a>!
+          &copy; Xixuan Zhang, <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>.
+
+          <br>
+          This site is modified based on a <a href="https://github.com/jamigibbs/portfolio"> Jekyll template </a> by Jami Gibbs.
+
+          </br>
         </p>
+
       </footer>
 
     </div>
@@ -82,13 +130,18 @@
           </a>
         </li>
         <li>
-          <a href="https://blog.jamigibbs.com/" aria-label="Blog">
-            <i class="fas fa-blog"></i>
+          <a href="https://www.linkedin.com/in/xixuan-zhang" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://dribbble.com/{{ site.dribbble }}" aria-label="Dribbble">
-            <i class="fab fa-dribbble"></i>
+          <a href="https://scholar.google.com/citations?user=dox6VgwAAAAJ" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/public/XixuanZHANG-CV-industry-2p.pdf" aria-label="CV" target="_blank">
+            <i class="fas fa-file-alt"></i> <!-- PDF icon -->
           </a>
         </li>
       </ul>

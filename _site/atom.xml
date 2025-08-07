@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Xixuan Zhang</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2025-08-07T13:15:45+02:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Xixuan Zhang</name>
+   <email>xixuan.zh@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Discourse Cohesion: Mapping How Conversations Evolve</title>
+   <link href="http://localhost:4000/2025/08/05/reddit/"/>
+   <updated>2025-08-05T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2025/08/05/reddit</id>
+   <content type="html">&lt;p&gt;Together with my co-authors, I developed a &lt;strong&gt;structure-aware embedding space&lt;/strong&gt; to capture how online discourse forms and unfolds over time. We encoded interactions among key discourse characteristics — &lt;strong&gt;submission type, topic, stance, political positions, sentiment, politeness, and toxicity&lt;/strong&gt; — using 231,042 comments from 36,384 threads on r/climate. (WIP: &lt;em&gt;&lt;a href=&quot;/public/discourse-cohesion.pdf&quot;&gt;poster&lt;/a&gt; presented at IC2S2 2025&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/reddit.png&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How Wikipedia Edits Evolve — and What Drives Them</title>
+   <link href="http://localhost:4000/2025/08/04/wikipedia/"/>
+   <updated>2025-08-04T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2025/08/04/wikipedia</id>
+   <content type="html">&lt;p&gt;Using a &lt;strong&gt;novel, fine-grained approach&lt;/strong&gt;, I analyzed 140,593 revisions of 76,525 sentences from 537 Wikipedia articles to uncover how collaborative content evolves. By &lt;strong&gt;reconstructing detailed revision sequences&lt;/strong&gt; and &lt;strong&gt;extracting factors&lt;/strong&gt; such as time, content, editor, and context, I examined how revision dynamics are shaped. The study reveals how &lt;strong&gt;epistemic power is negotiated through collective editing&lt;/strong&gt;, as community moderation and bureaucratic rules guide which revisions persist.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/wiki.png&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NEOVEX: Detecting and Analyzing Conspiracy Theories at Scale</title>
+   <link href="http://localhost:4000/2025/08/03/neovex/"/>
+   <updated>2025-08-03T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2025/08/03/neovex</id>
+   <content type="html">&lt;p&gt;As part of the &lt;a href=&quot;https://neovex-projekt.de&quot;&gt;NEOVEX&lt;/a&gt; research project, I collaborated with colleagues to develop &lt;strong&gt;a graph-based dictionary expansion method&lt;/strong&gt; for detecting domain-specific unknown keywords, based on a fine-tuned GloVe model for targeted data collection. Together, we built an &lt;strong&gt;eleven-year corpus&lt;/strong&gt; of conspiracy theory–related posts on the Great Replacement and New World Order from social media, legacy media, and alternative media via large-scale scraping and API integration. To detect conspiracy narratives, I &lt;strong&gt;fine-tuned multiple BERT models&lt;/strong&gt; and &lt;strong&gt;created  custom NLP methods&lt;/strong&gt; for this project, including entity recognition, dependency parsing, and both supervised and unsupervised text classification. This work supports large-scale analysis of conspiracy discourse across platforms, enabling deeper insights into misinformation dynamics and informing content moderation strategies.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Diffusion Dynamics of #FridaysForFuture: Mapping Tweet Cascades and Communities</title>
+   <link href="http://localhost:4000/2025/08/02/twitter/"/>
+   <updated>2025-08-02T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2025/08/02/twitter</id>
+   <content type="html">&lt;p&gt;I inferred the early diffusion of the #FridaysForFuture based on 237,892 retweet sequences and the follower–following links of 51,803 participants. Using a top-down perspective, I examined how &lt;strong&gt;networks, tweets, and retweet cascades&lt;/strong&gt; evolved, integrating both &lt;strong&gt;actor dynamics&lt;/strong&gt; and &lt;strong&gt;content patterns&lt;/strong&gt; to reveal how messages spread within and between communities in the movement’s formative stages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/twitter.png&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
