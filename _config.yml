@@ -6,7 +6,7 @@ title:               Xixuan Zhang
 tagline:             Data | AI | Social Science
 url:                 "https://xixuanzhang2022.github.io"
 paginate:            1
-baseurl:             "/portfolio"
+baseurl:             ""
 
 # Assets
 #
@@ -18,17 +18,17 @@ sass:
 # About/contact
 author:
   name:              Xixuan Zhang
-  url:               xixuanzhang2022.github.io/portfolio
+  url:               xixuanzhang2022.github.io
   email:             xixuan.zh@gmail.com
 
 # Custom vars
 version:             2.0.1
 github:
-  repo:              https://github.com/xixuanzhang2022/portfolio
-google_analytics:    
-twitter:             
+  repo:              https://github.com/xixuanzhang2022/xixuanzhang2022.github.io
+google_analytics:
+twitter:
 github:              xixuanzhang2022
-dribbble:            
+dribbble:
 
 # Gems
 plugins:
