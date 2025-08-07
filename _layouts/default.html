@@ -22,10 +22,10 @@
       <div class="content-section">
 
         <p style="font-size: 18px">
-          Hello! I'm <a href="/public/XixuanZHANG-CV-industry-2p.pdf" target="_blank">Xixuan</a>, a data scientist and PhD candidate in Computational Social Science at the Free University of Berlin. With a dual background in <strong>computer engineering</strong> and <strong>social science</strong>, I research how people create, share, and debate information on digital platforms, applying <strong>advanced computational methods</strong> to analyze <strong>large-scale data</strong>.
+          Hello! I'm <a href="{{ site.baseurl }}/public/XixuanZHANG-CV-industry-2p.pdf" target="_blank">Xixuan</a>, a data scientist and PhD candidate in Computational Social Science at the Free University of Berlin. With a dual background in <strong>computer engineering</strong> and <strong>social science</strong>, I research how people create, share, and debate information on digital platforms, applying <strong>advanced computational methods</strong> to analyze <strong>large-scale data</strong>.
         </p>
         <p style="font-size: 18px">
-          When I'm not immersed in a <a href="https://github.com/xixuanzhang2022"> project</a>, you’ll probably find me  reading, running, playing the piano, or cuddling with my <a href="/public/manulida.png">cats</a> 🐈🐈.
+          When I'm not immersed in a <a href="https://github.com/xixuanzhang2022"> project</a>, you’ll probably find me  reading, running, playing the piano, or cuddling with my <a href="{{ site.baseurl }}/public/manulida.png">cats</a> 🐈🐈.
         </p>
 
       </div>
@@ -66,7 +66,7 @@
 
               {% if post.file %}
                 <li>
-                  <a href="{{ post.file }}" aria-label="file" target="_blank"><i class="fas fa-file-alt"></i></a>
+                  <a href="{{ site.baseurl }}{{ post.file }}" aria-label="file" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </li>
               {% endif %}
 
@@ -92,7 +92,7 @@
               <strong>{{ pub.title }}</strong><br>
               {{ pub.authors }} — <em>{{ pub.journal }}</em>, {{ pub.year }}<br>
               {% if pub.link %}<a href="{{ pub.link }}" target="_blank" style = "color: #9eb1bd;">View Online</a>{% endif %}
-              {% if pub.pdf %} | <a href="{{ pub.pdf }}" target="_blank" style = "color: #9eb1bd;">PDF</a>{% endif %}
+              {% if pub.pdf %} | <a href="{{ site.baseurl }}{{ pub.pdf }}" target="_blank" style = "color: #9eb1bd;">PDF</a>{% endif %}
             </li>
           {% endfor %}
         </div>
@@ -140,7 +140,7 @@
           </a>
         </li>
         <li>
-          <a href="/public/XixuanZHANG-CV-industry-2p.pdf" aria-label="CV" target="_blank">
+          <a href="{{ site.baseurl }}/public/XixuanZHANG-CV-industry-2p.pdf" aria-label="CV" target="_blank">
             <i class="fas fa-file-alt"></i> <!-- PDF icon -->
           </a>
         </li>

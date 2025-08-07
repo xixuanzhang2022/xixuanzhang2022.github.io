@@ -9,4 +9,4 @@ file: /public/zhang-2025-decoding-revision-mechanisms-in-wikipedia-collaboration
 
 Using a **novel, fine-grained approach**, I analyzed 140,593 revisions of 76,525 sentences from 537 Wikipedia articles to uncover how collaborative content evolves. By **reconstructing detailed revision sequences** and **extracting factors** such as time, content, editor, and context, I examined how revision dynamics are shaped. The study reveals how **epistemic power is negotiated through collective editing**, as community moderation and bureaucratic rules guide which revisions persist.
 
-![Alt text](/public/wiki.png)
+![Alt text]({{ site.baseurl }}/public/wiki.png)
