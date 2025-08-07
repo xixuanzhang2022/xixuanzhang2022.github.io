@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How Wikipedia Edits Evolve — and What Drives Them
-git: http://xixuanzhang2022.github.io/wikiRev
+git: https://github.com/xixuanzhang2022/wikiRev
 site: https://journals.sagepub.com/doi/full/10.1177/14614448251336418
 tags: [NLP, fine-tuning BERT, active learning, text mining, frailty model, meta analysis]
 file: /public/zhang-2025-decoding-revision-mechanisms-in-wikipedia-collaboration-moderation-and-collectivities.pdf
